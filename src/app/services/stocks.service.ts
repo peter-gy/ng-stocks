@@ -17,7 +17,7 @@ export interface StockInterface {
 })
 export class StocksService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   get(): Array<string> {
     return stocks.slice(); // return copy instead of direct value
